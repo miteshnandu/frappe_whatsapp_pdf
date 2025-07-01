@@ -242,3 +242,7 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+override_whitelisted_methods = {
+    "frappe_whatsapp.api.whatsapp.send_whatsapp": "frappe_whatsapp_pdf.whatsapp.send_whatsapp.send_whatsapp"
+}
+
